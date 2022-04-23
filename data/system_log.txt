@@ -1,0 +1,151 @@
+2019/12/21日重装win10作业
+先将64GSD卡用读卡器插入电脑USB，格式化成exFAT。没有重新下载win10,而是用之前用过的系统。将系统ISO直接解压到U盘。尝试安装。
+重启系统按F12选择U盘启动，没有看到选择启动项的画面。进入BIOS也没看到U盘启动项。
+上网查了一下，直接解压貌似不行，可能是格式不对。下载UltraISO重新格式化U盘并用记录硬盘映象功能将系统盘刻入U盘，重启按F12。
+同样也不能选择启动盘，进入BIOS倒是可以选择U盘启动。顺利安装完毕。
+安装后续使用之前系统的Microsoft帐户，进入后显示已使用与Microsoft帐户关联的数字许可证激活，刚在淘宝买的激活码也用不上了。
+像上次装系统一样开始安装驱动，按“F:/K660D-G6D1 win10驱动”中的驱动顺序安装。Intel集显驱动由于版本过低没安装，USB30安装时提示系统不符合该软件的最低要求。
+MEI安装时提示严重错误，配置程序过早结束。
+安装Bandizip 迅雷10 百度网盘
+安装Creative Cloud，提示似乎下载的文件有错误。重启再试。重新下载Creative Cloud，安装到一定进度总会停下来，不过桌面上已经有图标了，
+安装几次都没完全安装，好在软件可以打开，就不管了。在Creative Cloud内修改Adobe系列软件安装路径，并在软件内安装photoshop cc 2019。
+在网上搜索并在百度网盘下载破解用的F:\软件工具\photoshop破解工具\photoshop.exe。替换photoshop主目录下的同名文件。失败，提示缺文件。
+继续在网上搜索GenP v2.4。并在百度网盘下载。由于win自带杀毒软件会报毒并删除，只好将报的威胁win32/keygen设置为允许。网上查询似乎已经破解成功。
+于是禁用该威胁。并删除下载的文件，只在百度网盘保留一份。
+2019/12/27 安装爱奇艺。
+2020/1/11 安装福昕PDF阅读器
+2020/1/12 安装酷狗
+安装上次装系统时装过的Visual Studio Installer，应该默认装在C盘。然后接下来的安装位置，IDE装在D，下载缓存和组件工具及SDK安装在E盘。
+安装通用Windows开发平台，并装上可选的C++。安装使用C++的桌面开发。
+使用上次装系统时下载的安装包安装android-studio-ide。（应该先安装jdk，这边安装的时候没注意，只能先装着看。）装的时候提示unable to access Sdk.
+暂时先选cancel。
+2020/1/15由于安装eclipse提示未找到JDK，这边先安装下JDK，使用上次装系统时下载的安装包安装JDK到E盘。并按网上教程配置开发环境。
+安装之前下载的eclipse。
+2020/1/17安装cannon ip1188打印机驱动及安装版电子说明书。
+2020/1/25安装网游跳舞游戏后因不能玩缷载。
+2020/1/25安装从跳舞毯官方网站链接的百度网盘下载的跳舞毯游戏。
+2020/1/28安装金山词霸。
+2020/2/5安装从mysql官网下载的mysql8社区版（免费），安装时JDBC驱动 和一个什么东西没装上。还是卸载算了，重新在官网下载了测试版压缩包，直接解压到
+D：/Program Files/下。配置过程还是搞不懂，重新下载个普通 的压缩包。按照网上的教程在mysql主目录下设置了my.ini文件，并创建目录F:\Documents\data\mysql\
+然后用Windows Powershell(管理员）输入命令来初始化及安装mysql均没有反应。在网上找了一大堆教程都无效果，期间还发现windows
+搜索框失效。又是网上一堆猛搜但都没有把搜索框弄正常，耗了太多时间。只好先把搜索框扔一边。用windows/system32下的cmd来运行
+mysqld命令终于出提示“由于找不到VCRUNTIME140_1.dll。。。"，看来Powershell会屏蔽错误。真是个坑人的货。于是按照网上教程
+下载按装这个东东。但又提示新版本已经存在无法安装，快疯掉了。在Visual Studio里安装了一个像Runtime的组件，更改后自动下载
+2.04G的文件安装(为什么会这么大，难道全部重装吗？）。
+2020/2/6继续昨天的安装作业，在网上搜索才发现mysql8是需要更新动态库版本，电脑里只有140.dll。再到官网下载下来不再提示这个问题。
+继续按照网上的教程配置安装完成mysql。使用mysql安装包安装connect/J.可以在项目中Add External Archives。
+2020/2/19购买了百度云服务器，下载Xshell用于远程访问。
+新建远程连接密钥保存于F:\Documents\SoftWareData\Xshell目录下。
+2020/4/8安装MSsqlserver开发版
+
+
+2018/6/15日神州战神K660D-G6D1重装win10作业：
+昨天好像是从系统之家下载的号称原版win10原版ISO：cn_windows_10_consumer_editions_version_1803_updated_march_2018_x64_dvd_12063766
+文件大小4439200KB。
+今天将闪迪64GSDXC卡备份到F:/sandiskSDBackup后将下载的镜像解压到SD卡上。
+通过MicroSD卡适配器和读卡器本子均无法读到引导U盘。可能是由于SD卡格式为exFAT或没插到USB2.0的接口上。
+将SD卡格式化为NTFS并插到USB2.0口上后正常安装操作系统。安装过程中非必须的激活码脑残地填了网上随便搜到的win专业版激活码。
+在天猫上买的5元专业版激活码，然后用了不知哪来的3元天猫券。激活成功。
+操作系统下载完成，准备再次安装。
+按照上面的套路安装完毕。
+记录下C盘使用量22.0G
+发现win10自动安装一些应用商店的应用，懒的管了，有的说不定能用上，只是到应用商店的设置里把自动更新关掉，并卸载一些游戏。
+再次查看C盘使用量23.2G，忍了。
+开始安装驱动，按“F:/K660D-G6D1 win10驱动”中的驱动顺序安装，安装日志文件在：C:\Users\bksne\AppData\Local\Temp\Intel\Logs
+win10自带集成显卡驱动比我以前下载的驱动版本更新，所以没有安装。
+要安装的独显驱动版本也比win10自带的更低，且一些额外的软件网上解释也并无多大用处，所以也没有装。
+以此类推是否这些驱动都没必要装，至此只装了芯片组驱动（估计也是没有必要）以及笔记本用的热键功能Hotkey。
+此时C盘占用：23.6G
+重装此次操作系统的目的是扩大C盘容量，之前分的80G一直是空间不足。这次分了150G。由于删了SSD上的所有数据，装系统时也未格式化剩下的空间。
+现在进磁盘管理格式化这部分空间。
+将视频、图片、下载、音乐移动到E盘根目录下相应文件夹。3D Objects移动到F:/Documents/3D Objects，Documents移动到F:/Documents
+整理磁盘上的文件，误删F:/users/bksne，删的时候显示有两千多个文件。。。习惯了Shift+Del。不过应该没什么重要文件。
+安装BandiZip、迅雷9、安装Creative Cloud(默认安装在C盘且不能更改，用于更改Photoshop安装位置）、在Creative Cloud中安装Photoshop。
+将Photoshop设置中的某存储位置改到E盘。
+到此C盘空间增加到28.8G。也不知道是什么东西占用的。
+安装我的世界给儿子玩。
+2018/6/16
+安装福昕PDF阅读器
+安装金山词霸
+安装 Visual Studio 2017 comunity，会自动安装Visual studio installer。应该会被装在C盘吧。
+对于Visual Studio installer里集成的各种工具，先只安装“使用C++的桌面开发”工具集。此次安装使用C盘空间2G。
+将Visual Studio项目和解决方案位置调整到F:/Documents/code下。
+安装WPS office办公套件。将其备份文件移动到G盘。
+安装JDK java开发工具包，然后根据网上的教程设置win10环境变量。
+2018/6/17
+本来想从Android官网下载android Studio。但因为没有翻墙访问不了，无奈只能从中文社区android-studio.org下载。
+不过下载链接似乎指向的是dl.android.com。因为是原版的。
+安装Android Studio。
+设置SDK目录为D:/Android/Sdk
+安装过程中的失败项：HAXM installation failed. To install HAXM follow the instructions found at: 
+https://software.intel.com/android/articles/installation-instructions-for-intel-hardware-accelerated-execution-manager-windows
+2018/6/19
+查年C盘使用量为43.3G。其中有两个大文件夹是安卓虚拟机的文件位于C:\Users\bksne\.android\avd\
+2018/6/21
+还原F:/sandiskSDBackup到闪迪TF卡上，然后删除此备份。
+安装QQ9。
+2018/6/23
+安装日本樱花编辑器。
+2018/6/27
+安装eclipse
+C盘使用量53.3G
+2018/7/24
+安装酷狗音乐
+2019/4/28
+安装sql server8.0及其它附加件
+2020/10/11
+按照网上教程，将官网下载的php解压后，将php.ini-product复制到C：/windows并改名为php.ini。
+并在IIS中处理映射程序-添加模块映射 好像搞不了算了。
+2020/10/12
+安装vscode听说可以远程开发的代码编辑器。
+为考二级JAVA将C:\Users\bksne\Desktop\202012计算机备考\6f3cac09e5aa310771869bade419fcfb下的三个文件/文件夹拷到C盘根目录下。
+
+2021/10/15 系统故障偏多重装win10，这次选择从微软官网下载ISO文件，系统版本会比较新，不用更新太多东西。安装方法还是参照之前的，用UltraISO
+将系统安装盘刻到U盘上。安装完后C盘占用25.8G，登陆WindowsLive帐户自动应用了数字许可，挺方便的。
+将C盘的文档、下载文件夹、媒体位置迁移到其它盘下以减少C盘空间的占用。
+关闭应用商店自动更新。
+设备管理器中四个问题，安装芯片组驱动，设备管理器中少了两个未知设备。读卡器驱动，触摸板驱动。
+经过一段时间下载了一些更新，C盘长到28.5G，重启后大小达到29.1G。
+安装Everything于D盘。
+安装7Zip于D盘。
+安装福昕PDF阅读器于D盘。
+安装酷狗音乐于D盘。改音乐文件夹于E:/Music。
+安装VS2017，并安装C++桌面开发及C++Linux开发两个工作负荷，安装于D盘，缓存位于E盘，但C盘也要占用两个G以上的空间。将项目位置改到F盘下。
+安装WPS office。
+2021/10/20 安装百度网盘
+安装快橙后卸载（VPN工具）
+安装Altium Designer19,安装方法附于安装文件夹下。
+2021/10/22 安装从官网下载的金山词霸。
+2021/10/24 安装嘉立创下单助手。
+安装keil MDK5.36于D盘。其它包放于F:/User下，具体位置不深究。
+由于MDK貌似不支持C51，所以又安装了C51版的keil。
+2021/11/27安装无忧数据库试题软件于D盘。
+2021/11/27安装SqlServer于D盘。数据库相关文件放于E盘。配置文件放于C：\Program Files\Microsoft SQL Server...目录下。
+2021/12/26安装微信于D盘。
+安装小米云服务，比较流氓，不让你选安装位置，估计进C盘了。
+需要对红米k30pro进行数据备份以恢复出厂设备。空间不足，需备份内容如下：
+mi cloud clear
+微信、QQ聊天记录 completed
+短信 already completed
+通话录音 completed
+下载及文档中的文件 completed
+百度网盘下载文件 completed
+音乐文件
+相册文件 completed
+一些找起来比较麻烦的APP 融旗污水厂 设备云助手 金山词霸 Xiaomi_Wear FBox_Assistant JuiceSSH QuickSupport TeamViewer 
+Jigsaw_Puzzle_Epic 数独2021 悦音 嘉立创科技 蛋播星球 百度网盘青春版 ZzzFun completed
+浏览器书签 already completed
+便签 cloud
+APP备忘 中国大学MOOC 编程狮 牛客 扇贝编程
+
+2022/1/10 安装迅雷于D盘
+安装游侠网下载的DirectX(R)多国语言版
+安装steam到D盘
+2022/1/21 安装FlexManager到D盘
+
+2022/3/9重装系统 win10
+安装芯片驱动
+vmware激活码 ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+scout安装提示：
+It is absolutely essential to install HSP ET 200SP TM V2.2 for operation of the ET 200SP timer modules,Otherwise it is not possible to
+configure them in SIMOTION SCOUT.
